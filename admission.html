@@ -8,23 +8,81 @@
 </head>
 
 <body>
+  <header>
+  <div class="header-container">
 
-<header class="simple-header">
-<h1>Admission</h1>
+    <div class="logo-area">
+      <img src="lwangalogo.jpeg" alt="School Logo">
+      <h1>ST.CHARLES LWANGA SSS MUKO</h1>
+    </div>
+
+    <div class="header-right">
+      <input type="text" placeholder="Search..." class="search-box">
+      <button class="search-btn">Search</button>
+
+      <div class="menu-toggle" onclick="toggleMenu()">
+        ☰
+      </div>
+    </div>
+
+  </div>
+
+  <ul id="nav-list">
+    <li><a href="home.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="academics.html">Academics</a></li>
+    <li><a href="enrollment.html">Enrollment</a></li>
+    <li><a href="cocurricular.html">Co-curricular</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
 </header>
 
 <section class="content">
 <h2>Admission Information</h2>
-<p>Admissions are open for Senior One (S1) and Senior Five (S5).</p>
 
 <ul>
 <li>Fill in the admission form</li>
 <li>Attach academic documents</li>
 <li>Submit to school administration</li>
 </ul>
+<div class="form-container">
+    <h2>Students Admission Form</h2>
+
+    <form id="admissionForm">
+        <input type="text" id="name" placeholder="Full Name" required>
+        <input type="date" id="dob" required>
+        <input type="text" id="school" placeholder="Previous School">
+        <input type="text" id="parent" placeholder="Parent/Guardian Name">
+        <input type="tel" id="phone" placeholder="Phone Number" required>
+            <select>
+      <option>Class Applying</option>
+      <option>S1</option>
+      <option>S2</option>
+            <option>S3</option>
+                  <option>S4</option>
+                      <option>S5</option>
+               <option>S6</option>
+    </select>
+
+        <button type="submit">Submit Application</button>
+    </form>
+
+    <p id="successMsg" class="success"></p>
+
+    <button onclick="downloadForm()" class="download-btn">
+        Download Copy
+    </button>
+</div>
+
 
 <a href="index.html">⬅ Back Home</a>
 </section>
 
+<footer>
+
+<p>© 2026 St Charles Lwanga SSS Muko</p>
+<p><i>Designed by DJ ZUBIC MAL & Tr.ALFRED NABAASA</i></p>
+
+</footer>
 </body>
 </html>
